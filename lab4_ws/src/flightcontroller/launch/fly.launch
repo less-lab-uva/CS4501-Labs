@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find flightgoggles)/launch/core.launch">
+  </include>
+
+  <include file="$(find visualizer)/launch/view.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/angle.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/velocity.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/position.launch">
+  </include>
+
+  <include file="$(find sensor_simulation)/launch/sensors.launch">
+    <arg name="map_path" value="room.txt" />
+  </include>
+
+  <!-- From Lab 2 -->
+  <node name="keyboard_manager_node" pkg="simple_control" type="keyboard_manager.py" output="screen"/>
+  <node name="keyboard" pkg="keyboard" type="keyboard"/>
+  <!-- From Lab 3 -->
+  <node name="state_safety_node" pkg="simple_control" type="state_and_safety.py" output="screen">
+    <param name="virtual_cage/x" type="double" value="3" />
+    <param name="virtual_cage/y" type="double" value="3" />
+    <param name="virtual_cage/z" type="double" value="3" />
+    <param name="acceptance_range" type="double" value="0.25" />
+  </node>
+
+
+
+</launch>
