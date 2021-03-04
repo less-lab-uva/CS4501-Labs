@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="yaw_pid_node" pkg="simple_control" type="yaw_pid.py">
+  	<param name="kp" type="double" value="0.0" />
+	<param name="ki" type="double" value="3.0" />
+	<param name="kd" type="double" value="0.0" />
+	<param name="setpoint" type="double" value="0.0" />
+  </node>
+  <param name="yaw" type="str" value="1.0 0.5" />
+  <param name="expected" type="str" value="-0.03 -0.045" />	
+  <test test-name="test_yaw_pid"
+  	pkg="simple_control"
+	type="test_pid.py"
+	time-limit="10.0"
+	name="i" />
+</launch>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find flightcontroller)/launch/fly.launch">
+  </include>
+
+  <test pkg="rostest" type="paramtest" name="paramtest_nonempty"
+      	test-name="paramtest_nonempty">
+  <param name="param_name_target" value="/yaw_pid_node/kp" />
+  <param name="param_name_target" value="/yaw_pid_node/ki" />
+  <param name="param_name_target" value="/yaw_pid_node/kd" />
+  <param name="param_name_target" value="/yaw_pid_node/setpoint" />
+  <param name="test_duration" value="5.0" />
+  <param name="wait_time" value="5.0" />
+</test>
+</launch>
