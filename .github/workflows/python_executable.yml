@@ -30,6 +30,9 @@ jobs:
           shopt -s globstar
           git update-index --chmod=+x **/*.py
           
+      - name: stage changed files
+        run: git add **/*.py
+        
       # based on https://github.com/orgs/community/discussions/25234
       - name: check for changes
         run: git status
@@ -38,5 +41,5 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git commit -am "Update Python Executables"
+          git commit -m "Update Python Executables"
           git push
