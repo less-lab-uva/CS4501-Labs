@@ -29,6 +29,9 @@ jobs:
         run: |
           shopt -s globstar
           git update-index --chmod=+x **/*.py
+          
+      - name: check for changes
+        run: git status
       
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
