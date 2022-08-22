@@ -24,16 +24,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: Enable globstar
-        run: shopt -s globstar
-        
+      
       - name: Set all Python files to be executable
-        run: git update-index --chmod=+x **/*.py
-
-      - name: Set all Python files to be executable
-        run: git update-index --chmod=+x **/*.py
+        run: |
+          shopt -s globstar
+          git update-index --chmod=+x **/*.py
         
       - name: Commit changed files
         run: git commit -m "Auto-update python executables"
