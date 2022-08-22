@@ -33,9 +33,6 @@ jobs:
       # based on https://github.com/orgs/community/discussions/25234#discussioncomment-3246984
       - name: check for changes
         run: git status
-        
-      - name: stage changed files
-        run: git add **/*.py
 
       - name: Commit report
         run: |
