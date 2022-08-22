@@ -33,13 +33,10 @@ jobs:
       # based on https://github.com/orgs/community/discussions/25234
       - name: check for changes
         run: git status
-        
-      - name: stage changed files
-        run: git add .
 
       - name: Commit report
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git commit -m "Update Python Executables"
+          git commit -am "Update Python Executables"
           git push
