@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find flightgoggles)/launch/core.launch">
+  </include>
+
+  <include file="$(find visualizer)/launch/view.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/angle.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/velocity.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/position.launch">
+  </include>
+
+  <include file="$(find sensor_simulation)/launch/sensors.launch">
+  </include>
+
+</launch>
