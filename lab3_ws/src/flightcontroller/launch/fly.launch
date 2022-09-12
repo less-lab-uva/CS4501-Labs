@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find flightgoggles)/launch/core.launch">
+  </include>
+
+  <include file="$(find visualizer)/launch/view.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/angle.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/velocity.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/position.launch">
+  </include>
+
+  <include file="$(find sensor_simulation)/launch/sensors.launch">
+  </include>
+
+  <!--From Lab 2-->
+  <node name="keyboard_manager_node" pkg="simple_control" type="keyboard_manager.py" output="screen"/>
+  <node name="keyboard" pkg="keyboard" type="keyboard"/>
+  <!-- To be added-->
+
+</launch>
