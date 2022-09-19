@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="map_path" default="room.txt"/>
+  <arg name="image_path" default="construction.jpeg" />
+  <arg name="pressure_noise" default="10" />
+  <arg name="lidar_range_noise" default="0.05" />
+  <arg name="lidar_position_noise" default="1" />
+  <arg name="position_noise_lvl" default="1" />
+  <arg name="attitude_noise_lvl" default="0.001" />
+  <arg name="velocity_noise_lvl" default="0.1" />
+  <arg name="velocity_attitude_noise_lvl" default="0.001" />
+
+  <param name="/uav/sensors/lidar_range_noise" type="double" value="$(arg lidar_range_noise)" />
+  <param name="/uav/sensors/lidar_position_noise" type="double" value="$(arg lidar_position_noise)" />
+  <param name="/uav/sensors/position_noise_lvl" type="double" value="$(arg position_noise_lvl)" />
+  <param name="/uav/sensors/attitude_noise_lvl" type="double" value="$(arg attitude_noise_lvl)" />
+  <param name="/uav/sensors/velocity_noise_lvl" type="double" value="$(arg velocity_noise_lvl)" />
+  <param name="/uav/sensors/velocity_attitude_noise_lvl" type="double" value="$(arg velocity_attitude_noise_lvl)" />
+
+
+  <node pkg="sensor_simulation" type="down_facing_camera.py" name="down_facing_camera_node" output="screen">
+    <param name="image_path" type="str" value="$(arg image_path)" />
+  </node>
+
+  <node pkg="sensor_simulation" type="lidar.py" name="lidar_node" output="screen">
+    <param name="map_path" type="str" value="$(arg map_path)" />
+  </node>
+
+  <node pkg="sensor_simulation" type="pressure.py" name="pressure_node" output="screen">
+    <param name="noise" type="double" value="$(arg pressure_noise)" />
+  </node>
+  <node pkg="sensor_simulation" type="noise_and_transformations.py" name="noise_and_transformations_node" output="screen">
+  </node>
+
+
+
+</launch>
