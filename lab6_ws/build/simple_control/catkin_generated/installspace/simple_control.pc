@@ -1,0 +1,8 @@
+prefix=/root/CS4501-Labs/lab6_ws/install
+
+Name: simple_control
+Description: Description of simple_control
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

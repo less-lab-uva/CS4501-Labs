@@ -1,0 +1,8 @@
+prefix=/root/CS4501-Labs/lab6_ws/devel/.private/simple_control
+
+Name: simple_control
+Description: Description of simple_control
+Version: 0.0.0
+Cflags: -I/root/CS4501-Labs/lab6_ws/devel/.private/simple_control/include
+Libs: -L${prefix}/lib 
+Requires: 

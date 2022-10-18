@@ -1,0 +1,8 @@
+prefix=/root/CS4501-Labs/lab6_ws/install
+
+Name: flightgoggles_uav_dynamics
+Description: Description of flightgoggles_uav_dynamics
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lflightgoggles_uav_dynamics
+Requires: roscpp std_msgs mav_msgs sensor_msgs geometry_msgs tf2 tf2_ros
