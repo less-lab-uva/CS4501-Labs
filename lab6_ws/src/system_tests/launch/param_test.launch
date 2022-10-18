@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find flightcontroller)/launch/fly.launch">
+  </include>
+
+  <test pkg="rostest" type="paramtest" name="paramtest_nonempty" test-name="paramtest_nonempty1">
+    <param name="param_name_target" value="/ship/followed_epsilon/x" />
+    <param name="param_name_target" value="/ship/ship_waypoints" />
+    <param name="param_name_target" value="/ship_following_controller_node/rate" />
+
+    <param name="test_duration" value="5.0" />
+    <param name="wait_time" value="5.0" />
+  </test>
+
+</launch>
