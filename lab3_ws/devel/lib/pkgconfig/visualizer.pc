@@ -1,1 +1,0 @@
-/root/CS4501-Labs/lab3_ws/devel/.private/visualizer/lib/pkgconfig/visualizer.pc
