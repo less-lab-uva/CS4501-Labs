@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find flightgoggles)/launch/core.launch">
+  </include>
+
+  <include file="$(find visualizer)/launch/view.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/angle.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/velocity.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/position.launch">
+  </include>
+
+  <include file="$(find sensor_simulation)/launch/sensors.launch">
+  </include>
+
+  <node name="geofence_and_mission" pkg="simple_control" type="geofence_and_mission.py" output="log">
+    <param name="virtual_cage/x" type="double" value="10" />
+    <param name="virtual_cage/y" type="double" value="10" />
+    <param name="virtual_cage/z" type="double" value="10" />
+    <param name="acceptance_range" type="double" value="1" />
+  </node>
+
+</launch>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="sensor_simulation" type="down_facing_camera.py" name="down_facing_camera_node" output="screen">
+    <param name="image_path" type="str" value="construction.jpeg" />
+  </node>
+
+  <node pkg="sensor_simulation" type="pressure.py" name="pressure_node" output="screen">
+  </node>
+
+</launch>
