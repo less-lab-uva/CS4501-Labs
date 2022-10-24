@@ -1,1 +1,0 @@
-/root/CS4501-Labs/lab7_ws/devel/.private/catkin_tools_prebuild/setup.bash
