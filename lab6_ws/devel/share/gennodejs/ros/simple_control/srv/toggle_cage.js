@@ -1,1 +1,0 @@
-/root/CS4501-Labs/lab6_ws/devel/.private/simple_control/share/gennodejs/ros/simple_control/srv/toggle_cage.js

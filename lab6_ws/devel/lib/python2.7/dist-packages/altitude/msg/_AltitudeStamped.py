@@ -1,1 +1,0 @@
-/root/CS4501-Labs/lab6_ws/devel/.private/altitude/lib/python2.7/dist-packages/altitude/msg/_AltitudeStamped.py
