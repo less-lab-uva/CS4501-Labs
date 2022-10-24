@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="search_image" default="test1.jpg" />
+
+  <include file="$(find flightgoggles)/launch/core.launch">
+  </include>
+
+  <include file="$(find visualizer)/launch/view.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/angle.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/velocity.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/position.launch">
+  </include>
+
+  <include file="$(find sensor_simulation)/launch/sensors.launch">
+    <arg name="map_path" value="room.txt" />
+    <arg name="image_path" value="$(arg search_image)" />
+  </include>
+
+  <!-- From Lab 3 -->
+  <node name="state_safety_node" pkg="simple_control" type="state_and_safety.py" output="screen">
+    <param name="virtual_cage/x" type="double" value="10" />
+    <param name="virtual_cage/y" type="double" value="10" />
+    <param name="virtual_cage/z" type="double" value="10" />
+    <param name="acceptance_range" type="double" value="10" />
+  </node>
+
+
+  <node name="gps_altitude_node" pkg="altitude" type="gps_altitude.py" output="screen"/>
+  <node name="gps_altitude_ma_node" pkg="altitude" type="gps_altitude_ma.py" output="screen"/>
+  <node name="lidar_altitude_ma_node" pkg="altitude" type="lidar_altitude_ma.py" output="screen"/>
+  <node name="altitude_fusion_node" pkg="altitude" type="altitude_fusion.py" output="screen"/>
+  <node name="altitude_kalman_node" pkg="altitude" type="altitude_kalman.py" output="screen"/>
+  <node name="altitude_visualizer_node" pkg="visualizer" type="altitude_visualizer.py" output="screen"/>
+
+  <node name="visit_waypoints_node" pkg="simple_control" type="visit_waypoints.py" output="screen">
+  </node>
+  <node name="perception_node" pkg="perception" type="perception.py" output="screen"/>
+
+</launch>

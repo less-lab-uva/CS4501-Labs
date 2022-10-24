@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find flightcontroller)/launch/fly.launch">
+  </include>
+
+  <test test-name="gps_hztest" pkg="rostest" type="hztest" name="gpsHZ" >
+    <param name="topic" value="uav/sensors/gps" />
+    <param name="hz" value="100" />
+    <param name="hzerror" value="10" />
+    <param name="test_duration" value="10.0" />
+  </test>
+
+</launch>
