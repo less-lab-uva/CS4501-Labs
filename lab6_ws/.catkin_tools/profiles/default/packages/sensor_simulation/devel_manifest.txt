@@ -1,0 +1,5 @@
+sensor_simulation
+/root/CS4501-Labs/lab6_ws/devel/.private/sensor_simulation/cmake.lock /root/CS4501-Labs/lab6_ws/devel/./cmake.lock
+/root/CS4501-Labs/lab6_ws/devel/.private/sensor_simulation/lib/pkgconfig/sensor_simulation.pc /root/CS4501-Labs/lab6_ws/devel/lib/pkgconfig/sensor_simulation.pc
+/root/CS4501-Labs/lab6_ws/devel/.private/sensor_simulation/share/sensor_simulation/cmake/sensor_simulationConfig-version.cmake /root/CS4501-Labs/lab6_ws/devel/share/sensor_simulation/cmake/sensor_simulationConfig-version.cmake
+/root/CS4501-Labs/lab6_ws/devel/.private/sensor_simulation/share/sensor_simulation/cmake/sensor_simulationConfig.cmake /root/CS4501-Labs/lab6_ws/devel/share/sensor_simulation/cmake/sensor_simulationConfig.cmake

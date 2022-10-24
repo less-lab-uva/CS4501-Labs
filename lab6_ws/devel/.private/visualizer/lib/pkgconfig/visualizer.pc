@@ -1,0 +1,8 @@
+prefix=/root/CS4501-Labs/lab6_ws/devel/.private/visualizer
+
+Name: visualizer
+Description: Description of visualizer
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

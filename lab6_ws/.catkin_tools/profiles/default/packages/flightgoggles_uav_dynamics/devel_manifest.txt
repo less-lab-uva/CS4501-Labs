@@ -1,0 +1,8 @@
+flightgoggles/flightgoggles_uav_dynamics
+/root/CS4501-Labs/lab6_ws/devel/.private/flightgoggles_uav_dynamics/cmake.lock /root/CS4501-Labs/lab6_ws/devel/./cmake.lock
+/root/CS4501-Labs/lab6_ws/devel/.private/flightgoggles_uav_dynamics/lib/libinertialMeasurementSim.so /root/CS4501-Labs/lab6_ws/devel/lib/libinertialMeasurementSim.so
+/root/CS4501-Labs/lab6_ws/devel/.private/flightgoggles_uav_dynamics/lib/libmulticopterDynamicsSim.so /root/CS4501-Labs/lab6_ws/devel/lib/libmulticopterDynamicsSim.so
+/root/CS4501-Labs/lab6_ws/devel/.private/flightgoggles_uav_dynamics/lib/flightgoggles_uav_dynamics/node /root/CS4501-Labs/lab6_ws/devel/lib/flightgoggles_uav_dynamics/node
+/root/CS4501-Labs/lab6_ws/devel/.private/flightgoggles_uav_dynamics/lib/pkgconfig/flightgoggles_uav_dynamics.pc /root/CS4501-Labs/lab6_ws/devel/lib/pkgconfig/flightgoggles_uav_dynamics.pc
+/root/CS4501-Labs/lab6_ws/devel/.private/flightgoggles_uav_dynamics/share/flightgoggles_uav_dynamics/cmake/flightgoggles_uav_dynamicsConfig-version.cmake /root/CS4501-Labs/lab6_ws/devel/share/flightgoggles_uav_dynamics/cmake/flightgoggles_uav_dynamicsConfig-version.cmake
+/root/CS4501-Labs/lab6_ws/devel/.private/flightgoggles_uav_dynamics/share/flightgoggles_uav_dynamics/cmake/flightgoggles_uav_dynamicsConfig.cmake /root/CS4501-Labs/lab6_ws/devel/share/flightgoggles_uav_dynamics/cmake/flightgoggles_uav_dynamicsConfig.cmake

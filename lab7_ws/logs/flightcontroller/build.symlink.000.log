@@ -1,0 +1,3 @@
+Symlinking /root/CS4501-Labs/lab7_ws/devel/lib/pkgconfig/flightcontroller.pc
+Symlinking /root/CS4501-Labs/lab7_ws/devel/share/flightcontroller/cmake/flightcontrollerConfig-version.cmake
+Symlinking /root/CS4501-Labs/lab7_ws/devel/share/flightcontroller/cmake/flightcontrollerConfig.cmake

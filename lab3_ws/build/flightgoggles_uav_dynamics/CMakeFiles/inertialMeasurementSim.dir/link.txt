@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -std=c++11  -std=c++11 -O3 -DNDEBUG  -shared -Wl,-soname,libinertialMeasurementSim.so -o /root/CS4501-Labs/lab3_ws/devel/.private/flightgoggles_uav_dynamics/lib/libinertialMeasurementSim.so CMakeFiles/inertialMeasurementSim.dir/libs/multicopterDynamicsSim/inertialMeasurementSim.cpp.o 

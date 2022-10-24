@@ -1,0 +1,1 @@
+/root/CS4501-Labs/lab7_ws/devel/.private/sensor_simulation/share/gennodejs/ros/sensor_simulation/srv/_index.js

@@ -34,12 +34,18 @@ class TestDroneBehavior(unittest.TestCase):
         self.print_msg("Starting: test_following")
         # Get the start time
         start_time = time.time()
+        prev = False
+
         # Test for a set duration
         while time.time() - start_time < self.test_duration:
             detected = rospy.wait_for_message("/ship/followed", Bool, timeout=None)
-            # Hint: use self.assertEqual()
-
+            if detected.data:
+                prev = True
+            self.print_msg('%s, %s' % (prev, detected.data))
+            self.assertEqual(prev, detected.data)
             rospy.sleep(0.1)
+        self.assertTrue(prev)  # make sure we found it at least once
+
 
 if __name__ == '__main__':
     rostest.rosrun("system_tests", "drone_behavior_test", TestDroneBehavior, sys.argv)

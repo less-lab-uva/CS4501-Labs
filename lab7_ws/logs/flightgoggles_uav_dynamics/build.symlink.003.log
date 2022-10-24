@@ -1,0 +1,6 @@
+Linked: (/root/CS4501-Labs/lab7_ws/devel/.private/flightgoggles_uav_dynamics/lib/libinertialMeasurementSim.so, /root/CS4501-Labs/lab7_ws/devel/lib/libinertialMeasurementSim.so)
+Linked: (/root/CS4501-Labs/lab7_ws/devel/.private/flightgoggles_uav_dynamics/lib/libmulticopterDynamicsSim.so, /root/CS4501-Labs/lab7_ws/devel/lib/libmulticopterDynamicsSim.so)
+Linked: (/root/CS4501-Labs/lab7_ws/devel/.private/flightgoggles_uav_dynamics/lib/flightgoggles_uav_dynamics/node, /root/CS4501-Labs/lab7_ws/devel/lib/flightgoggles_uav_dynamics/node)
+Linked: (/root/CS4501-Labs/lab7_ws/devel/.private/flightgoggles_uav_dynamics/lib/pkgconfig/flightgoggles_uav_dynamics.pc, /root/CS4501-Labs/lab7_ws/devel/lib/pkgconfig/flightgoggles_uav_dynamics.pc)
+Linked: (/root/CS4501-Labs/lab7_ws/devel/.private/flightgoggles_uav_dynamics/share/flightgoggles_uav_dynamics/cmake/flightgoggles_uav_dynamicsConfig-version.cmake, /root/CS4501-Labs/lab7_ws/devel/share/flightgoggles_uav_dynamics/cmake/flightgoggles_uav_dynamicsConfig-version.cmake)
+Linked: (/root/CS4501-Labs/lab7_ws/devel/.private/flightgoggles_uav_dynamics/share/flightgoggles_uav_dynamics/cmake/flightgoggles_uav_dynamicsConfig.cmake, /root/CS4501-Labs/lab7_ws/devel/share/flightgoggles_uav_dynamics/cmake/flightgoggles_uav_dynamicsConfig.cmake)

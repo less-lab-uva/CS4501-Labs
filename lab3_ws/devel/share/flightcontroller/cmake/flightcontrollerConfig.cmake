@@ -1,0 +1,1 @@
+/root/CS4501-Labs/lab3_ws/devel/.private/flightcontroller/share/flightcontroller/cmake/flightcontrollerConfig.cmake

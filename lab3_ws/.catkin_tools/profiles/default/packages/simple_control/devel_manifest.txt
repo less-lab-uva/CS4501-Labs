@@ -1,0 +1,5 @@
+simple_control
+/root/CS4501-Labs/lab3_ws/devel/.private/simple_control/cmake.lock /root/CS4501-Labs/lab3_ws/devel/./cmake.lock
+/root/CS4501-Labs/lab3_ws/devel/.private/simple_control/lib/pkgconfig/simple_control.pc /root/CS4501-Labs/lab3_ws/devel/lib/pkgconfig/simple_control.pc
+/root/CS4501-Labs/lab3_ws/devel/.private/simple_control/share/simple_control/cmake/simple_controlConfig-version.cmake /root/CS4501-Labs/lab3_ws/devel/share/simple_control/cmake/simple_controlConfig-version.cmake
+/root/CS4501-Labs/lab3_ws/devel/.private/simple_control/share/simple_control/cmake/simple_controlConfig.cmake /root/CS4501-Labs/lab3_ws/devel/share/simple_control/cmake/simple_controlConfig.cmake

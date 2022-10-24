@@ -1,0 +1,5 @@
+Symlinking /root/CS4501-Labs/lab1_ws/devel/lib/pkgconfig/rocketship.pc
+Symlinking /root/CS4501-Labs/lab1_ws/devel/lib/rocketship/countdown
+Symlinking /root/CS4501-Labs/lab1_ws/devel/lib/rocketship/main_controller
+Symlinking /root/CS4501-Labs/lab1_ws/devel/share/rocketship/cmake/rocketshipConfig-version.cmake
+Symlinking /root/CS4501-Labs/lab1_ws/devel/share/rocketship/cmake/rocketshipConfig.cmake

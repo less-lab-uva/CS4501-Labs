@@ -1,0 +1,8 @@
+prefix=/root/CS4501-Labs/lab7_ws/devel/.private/flightcontroller
+
+Name: flightcontroller
+Description: Description of flightcontroller
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

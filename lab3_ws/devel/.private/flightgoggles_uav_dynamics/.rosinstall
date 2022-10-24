@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/CS4501-Labs/lab3_ws/devel/.private/flightgoggles_uav_dynamics/setup.sh

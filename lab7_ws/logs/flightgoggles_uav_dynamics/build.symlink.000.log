@@ -1,0 +1,6 @@
+Symlinking /root/CS4501-Labs/lab7_ws/devel/lib/libinertialMeasurementSim.so
+Symlinking /root/CS4501-Labs/lab7_ws/devel/lib/libmulticopterDynamicsSim.so
+Symlinking /root/CS4501-Labs/lab7_ws/devel/lib/flightgoggles_uav_dynamics/node
+Symlinking /root/CS4501-Labs/lab7_ws/devel/lib/pkgconfig/flightgoggles_uav_dynamics.pc
+Symlinking /root/CS4501-Labs/lab7_ws/devel/share/flightgoggles_uav_dynamics/cmake/flightgoggles_uav_dynamicsConfig-version.cmake
+Symlinking /root/CS4501-Labs/lab7_ws/devel/share/flightgoggles_uav_dynamics/cmake/flightgoggles_uav_dynamicsConfig.cmake

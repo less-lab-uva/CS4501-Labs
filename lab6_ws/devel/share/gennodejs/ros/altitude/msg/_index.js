@@ -1,0 +1,1 @@
+/root/CS4501-Labs/lab6_ws/devel/.private/altitude/share/gennodejs/ros/altitude/msg/_index.js

@@ -1,0 +1,8 @@
+prefix=/root/CS4501-Labs/lab3_ws/devel/.private/flightgoggles
+
+Name: flightgoggles
+Description: Description of flightgoggles
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

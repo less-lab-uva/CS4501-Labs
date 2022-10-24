@@ -1,0 +1,8 @@
+prefix=/root/CS4501-Labs/lab6_ws/devel/.private/keyboard
+
+Name: keyboard
+Description: Description of keyboard
+Version: 0.1.1
+Cflags: -I/root/CS4501-Labs/lab6_ws/devel/.private/keyboard/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs message_runtime

@@ -1,0 +1,6 @@
+devel_space: /root/CS4501-Labs/lab3_ws/devel
+install: false
+install_space: /root/CS4501-Labs/lab3_ws/install
+profile: default
+source_space: /root/CS4501-Labs/lab3_ws/src
+workspace: /root/CS4501-Labs/lab3_ws

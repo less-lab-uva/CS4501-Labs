@@ -1,0 +1,8 @@
+prefix=/root/CS4501-Labs/lab1_ws/devel/.private/rocketship
+
+Name: rocketship
+Description: Description of rocketship
+Version: 0.0.0
+Cflags: -I/root/CS4501-Labs/lab1_ws/src/rocketship/include
+Libs: -L${prefix}/lib 
+Requires: 

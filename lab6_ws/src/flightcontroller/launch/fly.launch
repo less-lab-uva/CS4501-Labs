@@ -6,7 +6,7 @@
   <arg name="ship_waypoints" default="[[2,6],[2,-4],[-2,-2],[4,-2],[-5,5],[4,4],[-6,-6]]" />
   <!-- <arg name="ship_waypoints" default="[[[8, 0], [6, 0], [4, 0] ,[2, 0] ,[0, 0], [2, 0], [4, 0], [6, 0], [8, 0]]]" /> -->
   <!-- Global as it is used by both ship_following_controller_node and ship_node -->
-  <arg name="followed_epsilon" default="2.0"/>
+  <arg name="followed_epsilon" default="20"/>
 
   <include file="$(find flightgoggles)/launch/core.launch">
   </include>
@@ -25,6 +25,16 @@
   </include>
 
   <node pkg="flightcontroller" type="attitude_thrust_controller.py" name="attitude_thrust_controller_node" output="screen">
+  </node>
+
+  <node pkg="simple_control" type="ship_following_controller.py" name="ship_following_controller_node" output="screen">
+    <param name="gains/p_xy" type="double" value="0.01" />
+    <param name="gains/i_xy" type="double" value="0.0" />
+    <param name="gains/d_xy" type="double" value="1" />
+    <param name="gains/p_z" type="double" value="0.5" />
+    <param name="gains/i_z" type="double" value="0.0" />
+    <param name="gains/d_z" type="double" value="30" />
+    <param name="rate" type="int" value="10" />
   </node>
 
 </launch>

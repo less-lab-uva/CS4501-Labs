@@ -1,0 +1,14 @@
+[  0%] Built target _keyboard_generate_messages_check_deps_Key
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[ 10%] Built target keyboard_generate_messages_nodejs
+[ 30%] Built target keyboard_generate_messages_py
+[ 40%] Built target keyboard_generate_messages_lisp
+[ 50%] Built target keyboard_generate_messages_cpp
+[ 70%] Built target keyboard_generate_messages_eus
+[ 70%] Built target keyboard_gencpp
+[ 70%] Built target keyboard_generate_messages
+[100%] Built target keyboard

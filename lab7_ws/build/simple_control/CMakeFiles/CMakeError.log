@@ -1,0 +1,56 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /root/CS4501-Labs/lab7_ws/build/simple_control/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bad5b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bad5b.dir/build.make CMakeFiles/cmTC_bad5b.dir/build
+make[1]: Entering directory '/root/CS4501-Labs/lab7_ws/build/simple_control/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bad5b.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bad5b.dir/CheckSymbolExists.c.o   -c /root/CS4501-Labs/lab7_ws/build/simple_control/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_bad5b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bad5b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bad5b.dir/CheckSymbolExists.c.o  -o cmTC_bad5b 
+CMakeFiles/cmTC_bad5b.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x14): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text+0x18): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bad5b.dir/build.make:97: recipe for target 'cmTC_bad5b' failed
+make[1]: *** [cmTC_bad5b] Error 1
+make[1]: Leaving directory '/root/CS4501-Labs/lab7_ws/build/simple_control/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bad5b/fast' failed
+make: *** [cmTC_bad5b/fast] Error 2
+
+File /root/CS4501-Labs/lab7_ws/build/simple_control/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /root/CS4501-Labs/lab7_ws/build/simple_control/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7bd80/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7bd80.dir/build.make CMakeFiles/cmTC_7bd80.dir/build
+make[1]: Entering directory '/root/CS4501-Labs/lab7_ws/build/simple_control/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7bd80.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_7bd80.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7bd80
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bd80.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_7bd80.dir/CheckFunctionExists.c.o  -o cmTC_7bd80 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7bd80.dir/build.make:97: recipe for target 'cmTC_7bd80' failed
+make[1]: *** [cmTC_7bd80] Error 1
+make[1]: Leaving directory '/root/CS4501-Labs/lab7_ws/build/simple_control/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7bd80/fast' failed
+make: *** [cmTC_7bd80/fast] Error 2
+
+

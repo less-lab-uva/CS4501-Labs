@@ -1,0 +1,8 @@
+prefix=/root/CS4501-Labs/lab7_ws/devel/.private/sensor_simulation
+
+Name: sensor_simulation
+Description: Description of sensor_simulation
+Version: 0.0.0
+Cflags: -I/root/CS4501-Labs/lab7_ws/devel/.private/sensor_simulation/include
+Libs: -L${prefix}/lib 
+Requires: 

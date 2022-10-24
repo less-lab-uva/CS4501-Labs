@@ -1,0 +1,5 @@
+system_tests
+/root/CS4501-Labs/lab6_ws/devel/.private/system_tests/cmake.lock /root/CS4501-Labs/lab6_ws/devel/./cmake.lock
+/root/CS4501-Labs/lab6_ws/devel/.private/system_tests/lib/pkgconfig/system_tests.pc /root/CS4501-Labs/lab6_ws/devel/lib/pkgconfig/system_tests.pc
+/root/CS4501-Labs/lab6_ws/devel/.private/system_tests/share/system_tests/cmake/system_testsConfig-version.cmake /root/CS4501-Labs/lab6_ws/devel/share/system_tests/cmake/system_testsConfig-version.cmake
+/root/CS4501-Labs/lab6_ws/devel/.private/system_tests/share/system_tests/cmake/system_testsConfig.cmake /root/CS4501-Labs/lab6_ws/devel/share/system_tests/cmake/system_testsConfig.cmake

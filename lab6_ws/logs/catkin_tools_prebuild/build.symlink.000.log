@@ -1,0 +1,12 @@
+Symlinking /root/CS4501-Labs/lab6_ws/devel/./_setup_util.py
+Symlinking /root/CS4501-Labs/lab6_ws/devel/./cmake.lock
+Symlinking /root/CS4501-Labs/lab6_ws/devel/./env.sh
+Symlinking /root/CS4501-Labs/lab6_ws/devel/./local_setup.bash
+Symlinking /root/CS4501-Labs/lab6_ws/devel/./local_setup.sh
+Symlinking /root/CS4501-Labs/lab6_ws/devel/./local_setup.zsh
+Symlinking /root/CS4501-Labs/lab6_ws/devel/./setup.bash
+Symlinking /root/CS4501-Labs/lab6_ws/devel/./setup.sh
+Symlinking /root/CS4501-Labs/lab6_ws/devel/./setup.zsh
+Symlinking /root/CS4501-Labs/lab6_ws/devel/lib/pkgconfig/catkin_tools_prebuild.pc
+Symlinking /root/CS4501-Labs/lab6_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Symlinking /root/CS4501-Labs/lab6_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake

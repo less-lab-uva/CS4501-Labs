@@ -1,0 +1,1 @@
+/root/CS4501-Labs/lab7_ws/devel/.private/simple_control/share/gennodejs/ros/simple_control/_index.js

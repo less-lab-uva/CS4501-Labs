@@ -1,0 +1,7 @@
+rocketship
+/root/CS4501-Labs/lab1_ws/devel/.private/rocketship/cmake.lock /root/CS4501-Labs/lab1_ws/devel/./cmake.lock
+/root/CS4501-Labs/lab1_ws/devel/.private/rocketship/lib/pkgconfig/rocketship.pc /root/CS4501-Labs/lab1_ws/devel/lib/pkgconfig/rocketship.pc
+/root/CS4501-Labs/lab1_ws/devel/.private/rocketship/lib/rocketship/countdown /root/CS4501-Labs/lab1_ws/devel/lib/rocketship/countdown
+/root/CS4501-Labs/lab1_ws/devel/.private/rocketship/lib/rocketship/main_controller /root/CS4501-Labs/lab1_ws/devel/lib/rocketship/main_controller
+/root/CS4501-Labs/lab1_ws/devel/.private/rocketship/share/rocketship/cmake/rocketshipConfig-version.cmake /root/CS4501-Labs/lab1_ws/devel/share/rocketship/cmake/rocketshipConfig-version.cmake
+/root/CS4501-Labs/lab1_ws/devel/.private/rocketship/share/rocketship/cmake/rocketshipConfig.cmake /root/CS4501-Labs/lab1_ws/devel/share/rocketship/cmake/rocketshipConfig.cmake

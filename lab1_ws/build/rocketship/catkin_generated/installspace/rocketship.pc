@@ -1,0 +1,8 @@
+prefix=/root/CS4501-Labs/lab1_ws/install
+
+Name: rocketship
+Description: Description of rocketship
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

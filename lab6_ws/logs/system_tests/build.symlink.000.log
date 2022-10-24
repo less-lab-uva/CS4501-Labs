@@ -1,0 +1,3 @@
+Symlinking /root/CS4501-Labs/lab6_ws/devel/lib/pkgconfig/system_tests.pc
+Symlinking /root/CS4501-Labs/lab6_ws/devel/share/system_tests/cmake/system_testsConfig-version.cmake
+Symlinking /root/CS4501-Labs/lab6_ws/devel/share/system_tests/cmake/system_testsConfig.cmake

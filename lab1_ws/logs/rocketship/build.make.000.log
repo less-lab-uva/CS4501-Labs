@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target main_controller[0m
+[35m[1mScanning dependencies of target countdown[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/countdown.dir/src/countdown.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/main_controller.dir/src/main_controller.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable /root/CS4501-Labs/lab1_ws/devel/.private/rocketship/lib/rocketship/countdown[0m
+[100%] [32m[1mLinking CXX executable /root/CS4501-Labs/lab1_ws/devel/.private/rocketship/lib/rocketship/main_controller[0m
+[100%] Built target countdown
+[100%] Built target main_controller
