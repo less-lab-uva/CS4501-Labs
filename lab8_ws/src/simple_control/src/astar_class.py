@@ -5,23 +5,12 @@ import math
 
 class AStarPlanner:
 
-  # Initialize any variables
   def __init__(self, safe_distance=1):
-    # Save safe_distance
     self.safe_distance = safe_distance
 
-  # Find a plan through the map from drone_position to goal_position
-  # Mapdata         : List of lists where each row in the occupancy grid is a list. map_data[0][0] will give you the first cell
-  # Drone Position  : List with two integers. drone_position[0] will give you the x data
-  # Goal Position   : List with two integers. goal_position[0] will give you the x data
   def plan(self, map_data, drone_position, goal_position):
-    # Validate the data
     self.validate_data(map_data, drone_position, goal_position)
-
-    # Expand the obstacles by the safety factor
     map_data = self.expand_obstacles(map_data, self.safe_distance)
-
-    # Create both a frontier and a list to track which nodes are already processed
     frontier = PriorityQueue()
     frontier.put((0, drone_position))
     came_from = {}
@@ -29,28 +18,18 @@ class AStarPlanner:
     came_from[str(drone_position)] = None
     cost_so_far[str(drone_position)] = 0
     final_path = []
-
-    # While the frontier is not empty
     while not frontier.empty():
-      # Get the node with the lowest cost
       current = frontier.get()
       current = list(current[1])
-      # Check if the current node is the goal
       if current[0] == goal_position[0] and current[1] == goal_position[1]:
           while came_from[str(current)] != None:
               final_path.append(current)
               current = came_from[str(current)]
           final_path.append(current)
           return list(reversed(final_path))
-
-      # For each neighbor of the current node
       for next in self.get_neighbors(current, map_data):
-        # Compute the cost to traverse to that node
         edge_cost = math.sqrt(((current[0] - next[0])**2) + ((current[1] - next[1]) ** 2))
-        # Compute the estimated cost to goal (heuristic)
         goal_cost = math.sqrt(((goal_position[0] - next[0])**2) + ((goal_position[1] - next[1]) ** 2))
-        # Add the neighbors to the frontier with the new cost
-
         new_cost = cost_so_far[str(current)] + edge_cost
         if str(next) not in cost_so_far or new_cost < cost_so_far[str(next)]:
             cost_so_far[str(next)] = new_cost
@@ -58,7 +37,6 @@ class AStarPlanner:
             frontier.put((priority, next))
             came_from[str(next)] = current
 
-    # Return the path
     print("Error: No Path Found")
     return [drone_position]
 
